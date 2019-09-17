@@ -1,11 +1,67 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data class="ProductListBinding"></data>
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:background="@color/backgroundWhite"
+        android:layout_height="match_parent">
 
 
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent">
 
+            <android.support.design.widget.CollapsingToolbarLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:fitsSystemWindows="true"
+                app:layout_scrollFlags="scroll|enterAlways">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+                <LinearLayout
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/header"
+                        android:scaleType="center"
+                        android:adjustViewBounds="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/banner_height"></ImageView>
+
+                    <com.casestudy.android.views.TextViewCustom
+                        android:padding="8dp"
+                        android:text="Sub Header"
+                        android:layout_width="wrap_content"
+                        android:textSize="@dimen/sub_header_text"
+                        android:id="@+id/sub_banner"
+                        android:layout_height="wrap_content">
+                    </com.casestudy.android.views.TextViewCustom>
+
+                </LinearLayout>
+            </android.support.design.widget.CollapsingToolbarLayout>
+
+        </android.support.design.widget.AppBarLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/backgroundWhite"/>
+
+        </LinearLayout>
+
+    </android.support.design.widget.CoordinatorLayout>
+</layout>

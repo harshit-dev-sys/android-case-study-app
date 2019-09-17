@@ -1,13 +1,12 @@
 package com.casestudy.android.base;
 
-import android.app.Activity;
 import android.content.Context;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
-import androidx.appcompat.app.AppCompatActivity;
 
 public class BaseActivity extends AppCompatActivity {
 
-    public Activity mActivity;
+    public AppCompatActivity mActivity;
     public Context context;
 
     @Override

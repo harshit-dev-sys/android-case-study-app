@@ -12,6 +12,7 @@ public class ProductListActivity extends MvpActivity<ProductListPresenter> imple
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_product_list);
+        mvpPresenter.loadProduct();
     }
 
     @Override
@@ -21,7 +22,12 @@ public class ProductListActivity extends MvpActivity<ProductListPresenter> imple
 
     @Override
     public Context getContext() {
-        return null;
+        return this;
+    }
+
+    @Override
+    public int getPath() {
+        return R.raw.product_grid;
     }
 
     @Override

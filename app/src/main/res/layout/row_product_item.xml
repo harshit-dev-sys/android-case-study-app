@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data class="ProductListAdapterBinding">
+        <variable
+            name="slotItem"
+            type="com.casestudy.android.ui.productList.pojo.SlotsItem" />
+        <variable
+            name="layoutListener"
+            type="com.casestudy.android.ui.productList.listner.OnProductListener" />
+    </data>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </RelativeLayout>
+</layout>
