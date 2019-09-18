@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">AndroidCaseStudyApp</string>
+    <string name="data_not_found">Unable to parse json</string>
+    <string name="add_to_cart">ADD TO CART</string>
+    <string name="back">BACK</string>
+    <string name="adding">ADDING...</string>
 </resources>

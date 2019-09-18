@@ -1,9 +1,10 @@
-package com.casestudy.android.ui.productList.pojo;
+package com.casestudy.android.ui.product_list.pojo;
 
+import java.io.Serializable;
 import java.util.List;
 import com.google.gson.annotations.SerializedName;
 
-public class SlotsItem{
+public class SlotsItem implements Serializable {
 
 	@SerializedName("new_arrival")
 	private String newArrival;

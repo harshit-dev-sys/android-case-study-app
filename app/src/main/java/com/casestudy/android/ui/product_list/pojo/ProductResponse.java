@@ -1,4 +1,4 @@
-package com.casestudy.android.ui.productList.pojo;
+package com.casestudy.android.ui.product_list.pojo;
 
 import java.util.List;
 import com.google.gson.annotations.SerializedName;

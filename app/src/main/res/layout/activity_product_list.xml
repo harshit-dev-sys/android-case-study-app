@@ -12,32 +12,38 @@
 
         <android.support.design.widget.AppBarLayout
             android:layout_width="match_parent"
+            app:elevation="0dp"
             android:layout_height="wrap_content"
             android:background="@android:color/transparent">
 
             <android.support.design.widget.CollapsingToolbarLayout
+                app:elevation="0dp"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="@android:color/transparent"
                 android:fitsSystemWindows="true"
-                app:layout_scrollFlags="scroll|enterAlways">
+                app:layout_scrollFlags="scroll|exitUntilCollapsed">
 
                 <LinearLayout
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
                     android:gravity="center_horizontal"
                     android:orientation="vertical"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
 
-                    <ImageView
+                    <com.casestudy.android.views.HeaderImageView
+                        android:paddingTop="5dp"
                         android:id="@+id/header"
-                        android:scaleType="center"
-                        android:adjustViewBounds="true"
+                        android:scaleType="fitCenter"
                         android:layout_width="match_parent"
-                        android:layout_height="@dimen/banner_height"></ImageView>
+                        android:layout_height="wrap_content"></com.casestudy.android.views.HeaderImageView>
 
                     <com.casestudy.android.views.TextViewCustom
-                        android:padding="8dp"
+                        android:padding="5dp"
                         android:text="Sub Header"
+                        android:gravity="center"
+                        android:textColor="@color/text_grey"
                         android:layout_width="wrap_content"
                         android:textSize="@dimen/sub_header_text"
                         android:id="@+id/sub_banner"
@@ -50,6 +56,8 @@
         </android.support.design.widget.AppBarLayout>
 
         <LinearLayout
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical"

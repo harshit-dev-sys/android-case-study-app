@@ -3,24 +3,25 @@ package com.casestudy.android.views;
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.graphics.Typeface;
-import android.support.v7.widget.AppCompatButton;
+import android.support.v7.widget.AppCompatTextView;
 import android.util.AttributeSet;
+
 import com.casestudy.android.R;
 
-public class ButtonCustom extends AppCompatButton {
+public class TextViewCustomBold extends AppCompatTextView {
 private Typeface tf = null;
 private String customFont;
-public ButtonCustom(Context context, AttributeSet attrs, int defStyle) {
+public TextViewCustomBold(Context context, AttributeSet attrs, int defStyle) {
     super(context, attrs, defStyle);
     setCustomFontTextView(context, attrs);
 }
 
-public ButtonCustom(Context context, AttributeSet attrs) {
+public TextViewCustomBold(Context context, AttributeSet attrs) {
     super(context, attrs);
     setCustomFontTextView(context, attrs);
 }
 
-public ButtonCustom(Context context) {
+public TextViewCustomBold(Context context) {
     super(context);
 
 }

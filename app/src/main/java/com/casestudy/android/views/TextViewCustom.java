@@ -26,7 +26,7 @@ public TextViewCustom(Context context) {
 }
 public boolean setCustomFontTextView(Context ctx, String asset) {
     try {
-        tf = Typeface.createFromAsset(ctx.getAssets(), "Raleway-Regular.ttf");
+        tf = Typeface.createFromAsset(ctx.getAssets(), "SpartanMB-Regular.otf");
     } catch (Exception e) {
         return false;
     }

@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <dimen name="banner_height">200dp</dimen>
-    <dimen name="sub_header_text">18dp</dimen>
+    <dimen name="sub_header_text">16dp</dimen>
+    <dimen name="button_text">16dp</dimen>
+    <dimen name="item_details_text">16dp</dimen>
+    <dimen name="item_name">12dp</dimen>
 </resources>

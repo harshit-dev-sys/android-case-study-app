@@ -1,7 +1,10 @@
 package com.casestudy.android.util;
 
 import android.content.Context;
+import android.widget.ImageView;
 
+import com.bumptech.glide.Glide;
+import com.bumptech.glide.request.RequestOptions;
 import com.casestudy.android.R;
 
 import org.json.JSONObject;
@@ -34,6 +37,17 @@ public class Utility {
         }catch (Exception e){
             return "";
         }
+    }
+
+    public static void setImage(Context context, String imageURL, ImageView imageView){
+        RequestOptions options = new RequestOptions()
+                .centerInside()
+                .placeholder(R.drawable.loading);
+        Glide
+             .with(context)
+//             .setDefaultRequestOptions(options)
+             .load(imageURL)
+             .into(imageView);
     }
 
 

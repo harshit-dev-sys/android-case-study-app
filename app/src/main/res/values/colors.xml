@@ -2,6 +2,13 @@
 <resources>
     <color name="colorPrimary">#FFFFFF</color>
     <color name="colorPrimaryDark">#FFFFFF</color>
-    <color name="colorAccent">#C80E29</color>
+    <color name="colorAccent">#CE0F2C</color>
     <color name="backgroundWhite">#FFFFFF</color>
+    <color name="text_grey">#aaa</color>
+    <color name="text_black">#000000</color>
+    <color name="text_white">#FFFFFF</color>
+
+    <color name="shadow_normal">#979797</color>
+    <color name="shadow_pressed">#CE0F2C</color>
+
 </resources>

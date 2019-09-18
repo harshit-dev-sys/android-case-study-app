@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data class="ProductDetailsBinding"></data>
+
+    <android.support.v4.widget.NestedScrollView
+        android:background="@color/backgroundWhite"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:background="@color/backgroundWhite"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.casestudy.android.views.HeaderImageView
+            android:paddingTop="5dp"
+            android:id="@+id/header"
+            android:scaleType="fitCenter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></com.casestudy.android.views.HeaderImageView>
+
+        <com.casestudy.android.views.TextViewCustom
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:padding="5dp"
+            android:text=""
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:textSize="@dimen/sub_header_text"
+            android:textColor="@color/text_grey"
+            android:id="@+id/sub_banner"
+            android:layout_height="wrap_content">
+        </com.casestudy.android.views.TextViewCustom>
+
+    <LinearLayout
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:gravity="center_vertical"
+        android:weightSum="2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.casestudy.android.views.SquareLinearLayout
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/item_image"
+                android:layout_gravity="center_vertical"
+                android:scaleType="centerInside"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></ImageView>
+
+        </com.casestudy.android.views.SquareLinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.casestudy.android.views.TextViewCustomBold
+                android:textAllCaps="true"
+                android:text=""
+                android:id="@+id/brand_name"
+                android:layout_width="wrap_content"
+                android:textSize="@dimen/item_details_text"
+                android:textColor="@color/text_black"
+                android:layout_height="wrap_content">
+            </com.casestudy.android.views.TextViewCustomBold>
+
+
+            <com.casestudy.android.views.TextViewCustom
+                android:text=""
+                android:id="@+id/name"
+                android:textColor="@color/text_black"
+                android:layout_width="wrap_content"
+                android:textSize="@dimen/item_details_text"
+                android:layout_height="wrap_content">
+            </com.casestudy.android.views.TextViewCustom>
+
+            <com.casestudy.android.views.TextViewCustomBold
+                android:text=""
+                android:id="@+id/price"
+                android:textColor="@color/text_black"
+                android:layout_width="wrap_content"
+                android:textSize="@dimen/item_details_text"
+                android:layout_height="wrap_content">
+            </com.casestudy.android.views.TextViewCustomBold>
+
+            <RatingBar
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:id="@+id/rating"
+                android:numStars="5"
+                android:rating="0"
+                style="@style/Widget.AppCompat.RatingBar.Small"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_width="match_parent"
+            android:weightSum="2"
+            android:layout_height="50dp">
+
+            <com.casestudy.android.views.ButtonCustom
+                android:foreground="?android:attr/selectableItemBackground"
+                android:id="@+id/back"
+                android:layout_marginRight="10dp"
+                android:textAllCaps="true"
+                android:textSize="@dimen/button_text"
+                android:textColor="@color/text_black"
+                android:layout_weight="1"
+                android:text="@string/back"
+                android:layout_width="match_parent"
+                android:background="@drawable/button_back"
+                android:layout_height="match_parent">
+            </com.casestudy.android.views.ButtonCustom>
+
+            <com.casestudy.android.views.ButtonCustom
+                android:foreground="?android:attr/selectableItemBackground"
+                android:id="@+id/add_to_cart"
+                android:textAllCaps="true"
+                android:textSize="@dimen/button_text"
+                android:textColor="@color/text_white"
+                android:text="@string/add_to_cart"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:background="@drawable/button_add_to_cart"
+                android:layout_height="match_parent">
+            </com.casestudy.android.views.ButtonCustom>
+
+        </LinearLayout>
+
+    </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+</layout>
