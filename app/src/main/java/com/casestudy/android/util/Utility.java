@@ -56,5 +56,4 @@ public class Utility {
              .into(imageView);
     }
 
-
 }
