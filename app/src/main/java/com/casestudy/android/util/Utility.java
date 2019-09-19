@@ -41,24 +41,16 @@ public class Utility {
     }
 
     public static void setImage(Context context, String imageURL, ImageView imageView){
-        RequestOptions options = new RequestOptions()
-                .centerInside()
-                .placeholder(R.drawable.loading);
         Glide
              .with(context)
-//             .setDefaultRequestOptions(options)
              .load(imageURL)
              .into(imageView);
     }
 
 
     public static void setImage(Context context, String imageURL, ImageView imageView, int radius){
-        RequestOptions options = new RequestOptions()
-                .centerInside()
-                .placeholder(R.drawable.loading);
         Glide
              .with(context)
-//             .setDefaultRequestOptions(options)
              .load(imageURL)
                 .apply(RequestOptions.bitmapTransform(new RoundedCorners(radius)))
              .into(imageView);
