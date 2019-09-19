@@ -10,5 +10,6 @@
 
     <color name="shadow_normal">#979797</color>
     <color name="shadow_pressed">#CE0F2C</color>
+    <color name="light_grey">#797979</color>
 
 </resources>

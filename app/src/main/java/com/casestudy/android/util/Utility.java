@@ -4,6 +4,7 @@ import android.content.Context;
 import android.widget.ImageView;
 
 import com.bumptech.glide.Glide;
+import com.bumptech.glide.load.resource.bitmap.RoundedCorners;
 import com.bumptech.glide.request.RequestOptions;
 import com.casestudy.android.R;
 
@@ -47,6 +48,19 @@ public class Utility {
              .with(context)
 //             .setDefaultRequestOptions(options)
              .load(imageURL)
+             .into(imageView);
+    }
+
+
+    public static void setImage(Context context, String imageURL, ImageView imageView, int radius){
+        RequestOptions options = new RequestOptions()
+                .centerInside()
+                .placeholder(R.drawable.loading);
+        Glide
+             .with(context)
+//             .setDefaultRequestOptions(options)
+             .load(imageURL)
+                .apply(RequestOptions.bitmapTransform(new RoundedCorners(radius)))
              .into(imageView);
     }
 

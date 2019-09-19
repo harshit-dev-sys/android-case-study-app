@@ -4,8 +4,9 @@ import android.content.Context;
 import android.support.v7.widget.AppCompatImageButton;
 import android.support.v7.widget.CardView;
 import android.util.AttributeSet;
+import android.widget.RelativeLayout;
 
-public class SquareCardView extends CardView {
+public class SquareCardView extends RelativeLayout {
 
     public SquareCardView(Context context) {
         super(context);
@@ -24,7 +25,7 @@ public class SquareCardView extends CardView {
         super.onMeasure(widthMeasureSpec, widthMeasureSpec);
 
         int width = getMeasuredWidth();
-        setMeasuredDimension(width, width);
+        setMeasuredDimension(width, width+10);
     }
 
 }

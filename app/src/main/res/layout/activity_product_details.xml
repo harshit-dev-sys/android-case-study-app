@@ -14,29 +14,40 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <com.casestudy.android.views.HeaderImageView
-            android:paddingTop="5dp"
-            android:id="@+id/header"
-            android:scaleType="fitCenter"
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"></com.casestudy.android.views.HeaderImageView>
+            android:layout_height="wrap_content">
+
+            <ProgressBar
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></ProgressBar>
+
+            <com.casestudy.android.views.HeaderImageView
+                android:paddingTop="@dimen/spacing_five"
+                android:id="@+id/header"
+                android:scaleType="fitCenter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></com.casestudy.android.views.HeaderImageView>
+
+        </RelativeLayout>
 
         <com.casestudy.android.views.TextViewCustom
-            android:layout_marginEnd="10dp"
-            android:layout_marginStart="10dp"
-            android:padding="5dp"
+            android:layout_marginEnd="@dimen/spacing_ten"
+            android:layout_marginStart="@dimen/spacing_ten"
+            android:padding="@dimen/spacing_five"
             android:text=""
             android:gravity="center"
             android:layout_width="wrap_content"
             android:textSize="@dimen/sub_header_text"
-            android:textColor="@color/text_grey"
+            android:textColor="@color/text_black"
             android:id="@+id/sub_banner"
             android:layout_height="wrap_content">
         </com.casestudy.android.views.TextViewCustom>
 
     <LinearLayout
-        android:layout_marginStart="10dp"
-        android:layout_marginEnd="10dp"
+        android:layout_marginStart="@dimen/spacing_ten"
+        android:layout_marginEnd="@dimen/spacing_ten"
         android:gravity="center_vertical"
         android:weightSum="2"
         android:layout_width="match_parent"
@@ -48,9 +59,14 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
+            <ProgressBar
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></ProgressBar>
+
             <ImageView
                 android:id="@+id/item_image"
-                android:layout_gravity="center_vertical"
+                android:layout_centerInParent="true"
                 android:scaleType="centerInside"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"></ImageView>
@@ -73,7 +89,6 @@
                 android:textColor="@color/text_black"
                 android:layout_height="wrap_content">
             </com.casestudy.android.views.TextViewCustomBold>
-
 
             <com.casestudy.android.views.TextViewCustom
                 android:text=""
@@ -101,24 +116,35 @@
                 android:rating="0"
                 style="@style/Widget.AppCompat.RatingBar.Small"/>
 
+            <com.casestudy.android.views.TextViewCustomBold
+                android:text=""
+                android:id="@+id/variant"
+                android:textColor="@color/light_grey"
+                android:layout_width="wrap_content"
+                android:textSize="@dimen/item_name"
+                android:layout_height="wrap_content">
+            </com.casestudy.android.views.TextViewCustomBold>
+
         </LinearLayout>
 
     </LinearLayout>
 
         <LinearLayout
-            android:layout_marginBottom="20dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginStart="20dp"
-            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="@dimen/spacing_twenty"
+            android:layout_marginTop="@dimen/spacing_ten"
+            android:layout_marginStart="@dimen/spacing_twenty"
+            android:layout_marginEnd="@dimen/spacing_twenty"
             android:layout_width="match_parent"
             android:weightSum="2"
-            android:layout_height="50dp">
+            android:layout_height="55dp">
 
             <com.casestudy.android.views.ButtonCustom
                 android:foreground="?android:attr/selectableItemBackground"
                 android:id="@+id/back"
-                android:layout_marginRight="10dp"
+                android:layout_marginRight="@dimen/spacing_ten"
+                android:elevation="@dimen/spacing_five"
                 android:textAllCaps="true"
+                android:layout_marginBottom="@dimen/spacing_five"
                 android:textSize="@dimen/button_text"
                 android:textColor="@color/text_black"
                 android:layout_weight="1"
@@ -131,11 +157,13 @@
             <com.casestudy.android.views.ButtonCustom
                 android:foreground="?android:attr/selectableItemBackground"
                 android:id="@+id/add_to_cart"
+                android:elevation="@dimen/spacing_five"
                 android:textAllCaps="true"
+                android:layout_marginBottom="@dimen/spacing_five"
                 android:textSize="@dimen/button_text"
                 android:textColor="@color/text_white"
-                android:text="@string/add_to_cart"
-                android:layout_marginLeft="10dp"
+                android:text="@string/add_to_bag"
+                android:layout_marginLeft="@dimen/spacing_ten"
                 android:layout_weight="1"
                 android:layout_width="match_parent"
                 android:background="@drawable/button_add_to_cart"

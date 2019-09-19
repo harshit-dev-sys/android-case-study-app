@@ -7,6 +7,6 @@ import android.widget.ImageView;
 public class DataBindingAdapters {
         @BindingAdapter("android:src")
         public static void setImageResource(ImageView imageView, String url){
-            Utility.setImage(imageView.getContext(),url,imageView);
+            Utility.setImage(imageView.getContext(),url,imageView,15);
         }
 }

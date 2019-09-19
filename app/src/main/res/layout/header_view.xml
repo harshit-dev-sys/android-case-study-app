@@ -12,7 +12,7 @@
         android:layout_height="@dimen/banner_height"></ImageView>
 
     <com.casestudy.android.views.TextViewCustom
-        android:padding="8dp"
+        android:padding="@dimen/spacing_eight"
         android:text="Sub Header"
         android:layout_width="wrap_content"
         android:textSize="@dimen/sub_header_text"

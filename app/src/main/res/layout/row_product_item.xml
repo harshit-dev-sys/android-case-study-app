@@ -20,24 +20,23 @@
             android:layout_height="wrap_content">
         <com.casestudy.android.views.SquareCardView
             android:id="@+id/card_view"
-            android:elevation="5dp"
-            android:outlineSpotShadowColor="@color/shadow_normal"
-            android:foreground="?android:attr/selectableItemBackground"
-            android:layout_margin="5dp"
+            android:background="@drawable/card_bg"
             card_view:cardCornerRadius="15dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
+            <ProgressBar
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></ProgressBar>
             <ImageView
-                android:padding="5dp"
+                android:padding="@dimen/spacing_five"
                 android:id="@+id/item_image"
-                android:background="@color/backgroundWhite"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:src="@{slotItem.imageUrl}"
                 ></ImageView>
         </com.casestudy.android.views.SquareCardView>
             <com.casestudy.android.views.TextViewCustomBold
-                android:layout_marginTop="5dp"
                 android:text='@{slotItem.brand}'
                 android:gravity="center"
                 android:textColor="#000"

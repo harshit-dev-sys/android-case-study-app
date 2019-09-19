@@ -1,8 +1,6 @@
 package com.casestudy.android.ui.product_list.adapter;
 
 import android.content.Context;
-import android.content.Intent;
-import android.os.Build;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -12,7 +10,6 @@ import android.view.ViewGroup;
 
 import com.casestudy.android.R;
 import com.casestudy.android.databinding.ProductListAdapterBinding;
-import com.casestudy.android.ui.product_details.ProductDetailsActivity;
 import com.casestudy.android.ui.product_list.listner.OnProductListener;
 import com.casestudy.android.ui.product_list.pojo.SlotsItem;
 
@@ -56,18 +53,15 @@ public class ProductListAdapter extends RecyclerView.Adapter<ProductListAdapter.
                 Log.e("event "," : "+event.getAction());
                 switch(event.getAction()) {
                     case MotionEvent.ACTION_DOWN:
-                        if(android.os.Build.VERSION.SDK_INT >= 28)
-                            holder.binding.cardView.setOutlineSpotShadowColor(context.getResources().getColor(R.color.shadow_pressed));
+                            holder.binding.cardView.setBackground(context.getResources().getDrawable(R.drawable.card_selected_bg));
                         holder.binding.itemName.setTextColor(context.getResources().getColor(R.color.shadow_pressed));
                         return true;
                     case MotionEvent.ACTION_CANCEL:
-                        if(android.os.Build.VERSION.SDK_INT >= 28)
-                            holder.binding.cardView.setOutlineSpotShadowColor(context.getResources().getColor(R.color.shadow_normal));
+                            holder.binding.cardView.setBackground(context.getResources().getDrawable(R.drawable.card_bg));
                         holder.binding.itemName.setTextColor(context.getResources().getColor(R.color.text_black));
                         return true;
                     case MotionEvent.ACTION_UP:
-                        if(android.os.Build.VERSION.SDK_INT >= 28)
-                            holder.binding.cardView.setOutlineSpotShadowColor(context.getResources().getColor(R.color.shadow_normal));
+                            holder.binding.cardView.setBackground(context.getResources().getDrawable(R.drawable.card_bg));
                         holder.binding.itemName.setTextColor(context.getResources().getColor(R.color.text_black));
                         onViewClickListener.onProductClick(position);
                     return true;

@@ -5,4 +5,14 @@
     <dimen name="button_text">16dp</dimen>
     <dimen name="item_details_text">16dp</dimen>
     <dimen name="item_name">12dp</dimen>
+    <dimen name="radius_corner">15dp</dimen>
+
+    <dimen name="left_elev">1dp</dimen>
+    <dimen name="right_elev">1dp</dimen>
+    <dimen name="bottom_elev">2dp</dimen>
+    <dimen name="top_elev">1dp</dimen>
+    <dimen name="spacing_ten">10dp</dimen>
+    <dimen name="spacing_five">5dp</dimen>
+    <dimen name="spacing_twenty">20dp</dimen>
+    <dimen name="spacing_eight">8dp</dimen>
 </resources>

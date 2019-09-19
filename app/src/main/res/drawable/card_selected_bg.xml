@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- solids that simulate shadow !-->
+    <item>
+        <shape>
+            <corners android:radius="@dimen/radius_corner"></corners>
+            <solid android:color="#10CE0F2C" />
+            <padding android:top="@dimen/top_elev" android:right="@dimen/right_elev" android:bottom="@dimen/bottom_elev" android:left="@dimen/left_elev" />
+        </shape>
+    </item>
+
+    <item>
+        <shape>
+            <corners android:radius="@dimen/radius_corner"></corners>
+            <solid android:color="#20CE0F2C" />
+            <padding android:top="@dimen/top_elev" android:right="@dimen/right_elev" android:bottom="@dimen/bottom_elev" android:left="@dimen/left_elev" />
+        </shape>
+    </item>
+
+    <item>
+        <shape>
+            <corners android:radius="@dimen/radius_corner"></corners>
+            <solid android:color="#40CE0F2C" />
+            <padding android:top="@dimen/top_elev" android:right="@dimen/right_elev" android:bottom="@dimen/bottom_elev" android:left="@dimen/left_elev" />
+        </shape>
+    </item>
+
+    <item>
+        <shape>
+            <corners android:radius="@dimen/radius_corner"></corners>
+            <solid android:color="#50CE0F2C" />
+            <padding android:top="@dimen/top_elev" android:right="@dimen/right_elev" android:bottom="@dimen/bottom_elev" android:left="@dimen/left_elev" />
+        </shape>
+    </item>
+
+    <item>
+        <shape>
+            <corners android:radius="@dimen/radius_corner"></corners>
+            <solid android:color="#60CE0F2C" />
+            <padding android:top="@dimen/top_elev" android:right="@dimen/right_elev" android:bottom="@dimen/bottom_elev" android:left="@dimen/left_elev" />
+        </shape>
+    </item>
+
+    <!-- main background !-->
+    <item>
+        <shape>
+            <corners android:radius="@dimen/radius_corner"></corners>
+            <solid android:color="#ffffff" />
+        </shape>
+    </item>
+
+
+</layer-list>

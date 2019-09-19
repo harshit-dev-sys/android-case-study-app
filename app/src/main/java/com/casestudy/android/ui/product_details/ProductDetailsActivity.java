@@ -35,6 +35,7 @@ public class ProductDetailsActivity extends MvpActivity<ProductDetailsPresenter>
         binding.name.setText(slotsItem.getName());
         binding.price.setText(slotsItem.getCurrencySymbol()+slotsItem.getPrice());
         binding.rating.setRating(Float.parseFloat(slotsItem.getRating()));
+        binding.variant.setText(slotsItem.getVariant());
 
         binding.back.setOnClickListener(this);
         binding.addToCart.setOnClickListener(this);
@@ -57,7 +58,7 @@ public class ProductDetailsActivity extends MvpActivity<ProductDetailsPresenter>
 
     @Override
     public void Success() {
-        binding.addToCart.setText(getString(R.string.add_to_cart));
+        binding.addToCart.setText(getString(R.string.add_to_bag));
     }
 
 
