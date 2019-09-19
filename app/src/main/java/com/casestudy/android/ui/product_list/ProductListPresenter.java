@@ -1,7 +1,7 @@
 package com.casestudy.android.ui.product_list;
 
 import com.casestudy.android.R;
-import com.casestudy.android.base.BasePresenter;
+import com.casestudy.android.ui.base.BasePresenter;
 import com.casestudy.android.ui.product_list.pojo.ProductResponse;
 import com.casestudy.android.util.Utility;
 import com.google.gson.Gson;

@@ -1,6 +1,4 @@
-package com.casestudy.android.base;
-
-import android.content.Context;
+package com.casestudy.android.ui.base;
 
 public class BasePresenter<V> {
     public V mvpView;

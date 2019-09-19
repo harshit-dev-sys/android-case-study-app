@@ -23,16 +23,16 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"></ProgressBar>
 
-            <com.casestudy.android.views.HeaderImageView
+            <com.casestudy.android.ui.custom.HeaderImageView
                 android:paddingTop="@dimen/spacing_five"
                 android:id="@+id/header"
                 android:scaleType="fitCenter"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"></com.casestudy.android.views.HeaderImageView>
+                android:layout_height="wrap_content"></com.casestudy.android.ui.custom.HeaderImageView>
 
         </RelativeLayout>
 
-        <com.casestudy.android.views.TextViewCustom
+        <com.casestudy.android.ui.custom.TextViewCustom
             android:layout_marginEnd="@dimen/spacing_ten"
             android:layout_marginStart="@dimen/spacing_ten"
             android:padding="@dimen/spacing_five"
@@ -43,7 +43,7 @@
             android:textColor="@color/text_black"
             android:id="@+id/sub_banner"
             android:layout_height="wrap_content">
-        </com.casestudy.android.views.TextViewCustom>
+        </com.casestudy.android.ui.custom.TextViewCustom>
 
     <LinearLayout
         android:layout_marginStart="@dimen/spacing_ten"
@@ -53,7 +53,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <com.casestudy.android.views.SquareLinearLayout
+        <com.casestudy.android.ui.custom.SquareLinearLayout
             android:layout_weight="1"
             android:gravity="center"
             android:layout_width="match_parent"
@@ -71,7 +71,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"></ImageView>
 
-        </com.casestudy.android.views.SquareLinearLayout>
+        </com.casestudy.android.ui.custom.SquareLinearLayout>
 
         <LinearLayout
             android:orientation="vertical"
@@ -80,7 +80,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-            <com.casestudy.android.views.TextViewCustomBold
+            <com.casestudy.android.ui.custom.TextViewCustomBold
                 android:textAllCaps="true"
                 android:text=""
                 android:id="@+id/brand_name"
@@ -88,25 +88,25 @@
                 android:textSize="@dimen/item_details_text"
                 android:textColor="@color/text_black"
                 android:layout_height="wrap_content">
-            </com.casestudy.android.views.TextViewCustomBold>
+            </com.casestudy.android.ui.custom.TextViewCustomBold>
 
-            <com.casestudy.android.views.TextViewCustom
+            <com.casestudy.android.ui.custom.TextViewCustom
                 android:text=""
                 android:id="@+id/name"
                 android:textColor="@color/text_black"
                 android:layout_width="wrap_content"
                 android:textSize="@dimen/item_details_text"
                 android:layout_height="wrap_content">
-            </com.casestudy.android.views.TextViewCustom>
+            </com.casestudy.android.ui.custom.TextViewCustom>
 
-            <com.casestudy.android.views.TextViewCustomBold
+            <com.casestudy.android.ui.custom.TextViewCustomBold
                 android:text=""
                 android:id="@+id/price"
                 android:textColor="@color/text_black"
                 android:layout_width="wrap_content"
                 android:textSize="@dimen/item_details_text"
                 android:layout_height="wrap_content">
-            </com.casestudy.android.views.TextViewCustomBold>
+            </com.casestudy.android.ui.custom.TextViewCustomBold>
 
             <RatingBar
                 android:layout_height="wrap_content"
@@ -116,14 +116,14 @@
                 android:rating="0"
                 style="@style/Widget.AppCompat.RatingBar.Small"/>
 
-            <com.casestudy.android.views.TextViewCustomBold
+            <com.casestudy.android.ui.custom.TextViewCustomBold
                 android:text=""
                 android:id="@+id/variant"
                 android:textColor="@color/light_grey"
                 android:layout_width="wrap_content"
                 android:textSize="@dimen/item_name"
                 android:layout_height="wrap_content">
-            </com.casestudy.android.views.TextViewCustomBold>
+            </com.casestudy.android.ui.custom.TextViewCustomBold>
 
         </LinearLayout>
 
@@ -138,7 +138,7 @@
             android:weightSum="2"
             android:layout_height="55dp">
 
-            <com.casestudy.android.views.ButtonCustom
+            <com.casestudy.android.ui.custom.ButtonCustom
                 android:foreground="?android:attr/selectableItemBackground"
                 android:id="@+id/back"
                 android:layout_marginRight="@dimen/spacing_ten"
@@ -152,9 +152,9 @@
                 android:layout_width="match_parent"
                 android:background="@drawable/button_back"
                 android:layout_height="match_parent">
-            </com.casestudy.android.views.ButtonCustom>
+            </com.casestudy.android.ui.custom.ButtonCustom>
 
-            <com.casestudy.android.views.ButtonCustom
+            <com.casestudy.android.ui.custom.ButtonCustom
                 android:foreground="?android:attr/selectableItemBackground"
                 android:id="@+id/add_to_cart"
                 android:elevation="@dimen/spacing_five"
@@ -168,7 +168,7 @@
                 android:layout_width="match_parent"
                 android:background="@drawable/button_add_to_cart"
                 android:layout_height="match_parent">
-            </com.casestudy.android.views.ButtonCustom>
+            </com.casestudy.android.ui.custom.ButtonCustom>
 
         </LinearLayout>
 

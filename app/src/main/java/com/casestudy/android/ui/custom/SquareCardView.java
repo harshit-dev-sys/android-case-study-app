@@ -1,8 +1,6 @@
-package com.casestudy.android.views;
+package com.casestudy.android.ui.custom;
 
 import android.content.Context;
-import android.support.v7.widget.AppCompatImageButton;
-import android.support.v7.widget.CardView;
 import android.util.AttributeSet;
 import android.widget.RelativeLayout;
 

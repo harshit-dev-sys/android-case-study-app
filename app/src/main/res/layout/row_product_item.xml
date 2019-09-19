@@ -18,7 +18,7 @@
             android:layout_width="match_parent"
             android:orientation="vertical"
             android:layout_height="wrap_content">
-        <com.casestudy.android.views.SquareCardView
+        <com.casestudy.android.ui.custom.SquareCardView
             android:id="@+id/card_view"
             android:background="@drawable/card_bg"
             card_view:cardCornerRadius="15dp"
@@ -35,8 +35,8 @@
                 android:layout_height="match_parent"
                 android:src="@{slotItem.imageUrl}"
                 ></ImageView>
-        </com.casestudy.android.views.SquareCardView>
-            <com.casestudy.android.views.TextViewCustomBold
+        </com.casestudy.android.ui.custom.SquareCardView>
+            <com.casestudy.android.ui.custom.TextViewCustomBold
                 android:text='@{slotItem.brand}'
                 android:gravity="center"
                 android:textColor="#000"
@@ -45,6 +45,6 @@
                 android:textSize="@dimen/item_name"
                 android:id="@+id/item_name"
                 android:layout_height="wrap_content">
-            </com.casestudy.android.views.TextViewCustomBold>
+            </com.casestudy.android.ui.custom.TextViewCustomBold>
         </LinearLayout>
 </layout>

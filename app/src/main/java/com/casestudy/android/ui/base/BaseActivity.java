@@ -1,4 +1,4 @@
-package com.casestudy.android.base;
+package com.casestudy.android.ui.base;
 
 import android.content.Context;
 import android.support.v7.app.AppCompatActivity;

@@ -38,14 +38,14 @@
                         android:layout_height="wrap_content"></ProgressBar>
 
 
-                    <com.casestudy.android.views.HeaderImageView
+                    <com.casestudy.android.ui.custom.HeaderImageView
                         android:paddingTop="@dimen/spacing_five"
                         android:id="@+id/header"
                         android:scaleType="fitCenter"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"></com.casestudy.android.views.HeaderImageView>
+                        android:layout_height="wrap_content"></com.casestudy.android.ui.custom.HeaderImageView>
 
-                    <com.casestudy.android.views.TextViewCustom
+                    <com.casestudy.android.ui.custom.TextViewCustom
                         android:layout_centerHorizontal="true"
                         android:layout_below="@+id/header"
                         android:padding="@dimen/spacing_five"
@@ -56,7 +56,7 @@
                         android:textSize="@dimen/sub_header_text"
                         android:id="@+id/sub_banner"
                         android:layout_height="wrap_content">
-                    </com.casestudy.android.views.TextViewCustom>
+                    </com.casestudy.android.ui.custom.TextViewCustom>
 
                 </RelativeLayout>
             </android.support.design.widget.CollapsingToolbarLayout>

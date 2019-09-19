@@ -11,13 +11,13 @@
         android:layout_width="match_parent"
         android:layout_height="@dimen/banner_height"></ImageView>
 
-    <com.casestudy.android.views.TextViewCustom
+    <com.casestudy.android.ui.custom.TextViewCustom
         android:padding="@dimen/spacing_eight"
         android:text="Sub Header"
         android:layout_width="wrap_content"
         android:textSize="@dimen/sub_header_text"
         android:id="@+id/sub_banner"
         android:layout_height="wrap_content">
-    </com.casestudy.android.views.TextViewCustom>
+    </com.casestudy.android.ui.custom.TextViewCustom>
 
 </LinearLayout>

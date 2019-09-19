@@ -1,32 +1,32 @@
-package com.casestudy.android.views;
+package com.casestudy.android.ui.custom;
 
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.graphics.Typeface;
-import android.support.v7.widget.AppCompatButton;
+import android.support.v7.widget.AppCompatTextView;
 import android.util.AttributeSet;
 import com.casestudy.android.R;
 
-public class ButtonCustom extends AppCompatButton {
+public class TextViewCustom extends AppCompatTextView {
 private Typeface tf = null;
 private String customFont;
-public ButtonCustom(Context context, AttributeSet attrs, int defStyle) {
+public TextViewCustom(Context context, AttributeSet attrs, int defStyle) {
     super(context, attrs, defStyle);
     setCustomFontTextView(context, attrs);
 }
 
-public ButtonCustom(Context context, AttributeSet attrs) {
+public TextViewCustom(Context context, AttributeSet attrs) {
     super(context, attrs);
     setCustomFontTextView(context, attrs);
 }
 
-public ButtonCustom(Context context) {
+public TextViewCustom(Context context) {
     super(context);
 
 }
 public boolean setCustomFontTextView(Context ctx, String asset) {
     try {
-        tf = Typeface.createFromAsset(ctx.getAssets(), "SpartanMB-SemiBold.otf");
+        tf = Typeface.createFromAsset(ctx.getAssets(), "SpartanMB-Regular.otf");
     } catch (Exception e) {
         return false;
     }

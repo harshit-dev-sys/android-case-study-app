@@ -8,7 +8,7 @@ import android.support.v7.widget.GridLayoutManager;
 import android.widget.Toast;
 
 import com.casestudy.android.R;
-import com.casestudy.android.base.MvpActivity;
+import com.casestudy.android.ui.base.MvpActivity;
 import com.casestudy.android.databinding.ProductListBinding;
 import com.casestudy.android.ui.product_details.ProductDetailsActivity;
 import com.casestudy.android.ui.product_list.adapter.ProductListAdapter;

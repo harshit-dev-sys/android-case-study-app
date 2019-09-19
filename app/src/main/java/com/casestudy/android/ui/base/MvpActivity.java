@@ -1,4 +1,4 @@
-package com.casestudy.android.base;
+package com.casestudy.android.ui.base;
 
 import android.os.Bundle;
 
