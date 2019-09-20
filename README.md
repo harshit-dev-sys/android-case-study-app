@@ -16,3 +16,11 @@ https://developer.android.com/studio/index.html
 2. Open project in the android studio.
 4. Build your project in the android studio.
 5. After successfully build, run the application on an already created android emulator.
+
+
+## Screens
+- <b>Product List</b>
+            ![](https://github.com/harshit-dev-sys/android-case-study-app/blob/master/app/product_list.png)
+   
+ - <b>Product Details</b>
+             ![](https://github.com/harshit-dev-sys/android-case-study-app/blob/master/app/product_details.png)
